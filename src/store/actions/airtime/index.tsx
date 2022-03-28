@@ -1,4 +1,3 @@
-import axios from 'axios';
 import AxiosCall from '../../../Utils/axios';
 import ErrorHandler from '../../../Utils/error-handler';
 

@@ -43,31 +43,7 @@ const AxiosCall = async (requestObj: { path: any; method: any; data: any; conten
     const { response }: any = error;
     const { request, ...errorObject } = response; // take everything but 'request'
     if (errorObject.status === 401) {
-      /**
-       * if the token has expires, refresh the token and generate a new access token
-       */
-      // Axios({
-      //   url: 'https://homechallenge.volopa.com/auth/getToken', //token endpoint
-      //   method: 'post',
-      //   params: {
-      //     "grant_type": "refresh_token",
-      //     "clientId": localStorage.getItem("authUser"),
-      //     "refresh_token": localStorage.getItem('refreshToken')
-      //   },
-      //   headers: {
-      //     'Accept': 'application/json',
-      //     'Content-Type': 'application/x-www-form-urlencoded'
-      //   },
-      // }).then(
-      //   (response) => {
-      //     /**
-      // * store the new genrated token in the storage
-      // */
-      //     localStorage.setItem("authToken", response.data.access_token)
-      //     localStorage.setItem("refreshToken", response.data.access_token)
-      //     window.location.reload(); // to refresh the page
-      //   }
-      // );
+      
       console.log(errorObject)
     }
     return response
