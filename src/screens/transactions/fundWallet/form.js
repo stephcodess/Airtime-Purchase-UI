@@ -2,7 +2,6 @@ import Input from "../../../components/input/input";
 import emptyCard from "../../../assets/images/emptycards.svg";
 import "./style.css";
 import { useFlutterwave, closePaymentModal } from "flutterwave-react-v3";
-import LOGO from "../../../assets/images/fidpressLogo.png";
 import { useState } from "react";
 function FundWalletForm() {
   const [email, setEmail] = useState("")

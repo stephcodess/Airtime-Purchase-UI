@@ -1,13 +1,9 @@
 import SidebarComponent from "../../../components/sidebar/sidebar";
-import DashboardHeader from "../../dashboard/header";
-import LOGO from "../../../assets/images/fidpressLogo.png";
-import AirtimePurchaseComponentFaq from "../../../components/faq";
 import FundWalletForm from "./form";
-import Input from "../../../components/input/input";
 import { useState } from "react";
 
 function FundWallet() {
-  const [paymentType, setPaymentType] = useState("");
+  // const [paymentType, setPaymentType] = useState("");
 
   return (
     <div>
