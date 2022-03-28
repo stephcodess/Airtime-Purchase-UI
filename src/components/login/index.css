@@ -1,0 +1,55 @@
+.bigWrapper{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+input:focus{
+    outline: none;
+}
+input {
+  filter: none;
+}
+
+.login-logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.login-logo img{
+    width: 50%;
+    height: 140px;
+}
+.loginBg{
+    background: linear-gradient(#754ffe,#7258cf,#8673ca);
+}
+.bannerText{
+    color: #fff;
+    height: 60%;
+    width: 100%;
+    padding-left: 10%;
+}
+.bannerText ul{
+    list-style: decimal;
+}
+.bannerText ul li{
+    line-height: 50px;
+    font-size: 30px;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.604);
+}
+.bannerText h4{
+    font-size: 45px;
+    font-weight: bolder;
+}
+.bannerImg{
+    height: 40%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+    margin-left: 20%;
+}

@@ -1,0 +1,14 @@
+export const HOME ='/';
+export const REGISTER = "/register";
+export const LOGIN = "/login";
+export const DASHBOARD ='/dashboard';
+export const FORGOTPASSWORD='/forgot-password';
+export const AIRTIME = "/airtime-purchase";
+export const FUNDWALLET = "/fund-wallet";
+export const PRODUCTS = "/products";
+export const CREATEPOST = "/admin/create-post";
+export const ALLPOSTS = "/admin/all-posts";
+export const DATASUB = "/purchase-data";
+export const ALLUSERS ="/admin/users";
+export const ALLPRODUCTS = "/admin/products";
+export const CREATEPRODUCT = "/admin/create-product";

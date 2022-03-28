@@ -1,0 +1,58 @@
+<script>
+    function funnc(s, a, b){
+        var match_empty = /^$/;
+        if (s.match(match_empty)) {
+            alert(-1);
+        }else{
+            var i = s.length - 1, aIndex= -1, bIndex= -1;
+            while((aIndex== -1) && (bIndex==-1) && (i >= 0)){
+                s.substring(i, i+1) == a ? aIndex = i : bIndex= i;
+                i--;
+            }
+
+            if (aIndex != 1) {
+                if (bIndex == -1) {
+                    return aIndex;
+                }else{
+                    return Math.max(aIndex,bIndex);
+                }
+            }else{
+                if (bIndex != -1) {
+                    return bIndex
+                }else{
+                    return -1;
+                }
+            }
+        }
+    }
+    funnc("steph");
+
+
+
+    var _matches = {
+    '{': { invert: '}', isOpening: true },
+    '}': { invert: '{', isOpening: false },
+    '(': { invert: ')', isOpening: true },
+    ')': { invert: '(', isOpening: false },
+    '[': { invert: ']', isOpening: true },
+    ']': { invert: '[', isOpening: false }
+};
+
+function check (input) {
+    var bracketsStack = [];
+    for (var index = 0; index < input.length; index++) {
+        var char = input[index];
+        if(!_matches[char]) continue; // not a bracket
+        
+        if (!_matches[char].isOpening) {
+            if(bracketsStack.length == 0 || bracketsStack[bracketsStack.length - 1] != _matches[char].invert)
+                return false; // no opening bracket for a currently closing found
+            else
+                bracketsStack.pop();            
+        }
+        else if (_matches[char].isOpening)
+            bracketsStack.push(char);
+    }
+    return bracketsStack.length == 0;
+}
+</script>

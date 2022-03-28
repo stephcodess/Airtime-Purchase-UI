@@ -1,0 +1,13 @@
+.header-container {
+  width: 100vw;
+  box-shadow: 0 0 20px rgba(18, 38, 63, 0.1);
+  transition: 0.3s;
+  z-index: 1000;
+  top: 0;
+}
+
+.header-container.hidden {
+  background-color: transparent;
+  box-shadow: none;
+  background-color: #fff;
+}
