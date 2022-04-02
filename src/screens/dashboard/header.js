@@ -41,12 +41,12 @@ function DashboardHeader(props) {
               bg="rgba(0,0,0,0.03)"
               brColor="rgba(0,0,0,1)"
             />
-            <Button
+            {/* <Button
               className="mx-3 px-4 py-2"
               title="wallet: #0"
               bg="rgba(0,0,0,0.03)"
               brColor="rgba(0,0,0,1)"
-            />
+            /> */}
           </div>
         </div>
       </div>

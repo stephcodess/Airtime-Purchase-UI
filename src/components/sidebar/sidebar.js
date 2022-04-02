@@ -54,7 +54,7 @@ function SidebarComponent(props) {
   return (
     <div id="body-pd" style={{height: "100vh"}}>
       <header
-        className="header d-flex flex-row justify-content-start"
+        className="header d-flex flex-row justify-content-between justify-content-lg-start"
         id="header"
       >
         <Link to={"/"}>
@@ -73,7 +73,7 @@ function SidebarComponent(props) {
           <div>
             <Link to={"/"} className="nav_logo">
               <i className="bx bx-layer nav_logo-icon"></i>
-              <h3 style={{ fontSize: 35, color: "#fff" }}></h3>
+              {/* <h3 style={{ fontSize: 35, color: "#fff" }}></h3> */}
             </Link>
             <div className="nav_list">
               <Link to="/dashboard" className="nav_link active">

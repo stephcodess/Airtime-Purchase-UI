@@ -12,3 +12,4 @@ export const DATASUB = "/purchase-data";
 export const ALLUSERS ="/admin/users";
 export const ALLPRODUCTS = "/admin/products";
 export const CREATEPRODUCT = "/admin/create-product";
+export const ELECTRICITY = "/purchase-electricity";

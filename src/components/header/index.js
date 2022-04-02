@@ -25,11 +25,11 @@ function Header() {
   const hiddenStyle = shouldHideHeader ? "" : "hidden";
   return (
     <nav
-      className={`header-container ${hiddenStyle} navbar fixed-top navbar-expand-lg navbar-light bg-white`}
+      className={`header-container navbar fixed-top navbar-expand-lg navbar-light bg-white`}
     >
       <div className="container">
         <Link to={"/"} style={{height: 70, overflow:"hidden",}}>
-          <img src={LOGO} alt="Logo" width={"224px"} height={120} style={{marginLeft: -60, marginTop: -20}} />
+          <img src={LOGO} alt="Logo" width={"150px"} height={100} style={{marginLeft: -40, marginTop: -10}} />
         </Link>
         <button
           className="navbar-toggler"

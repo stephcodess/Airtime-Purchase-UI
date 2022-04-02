@@ -25,6 +25,13 @@ export const airtime = {
   error: null,
 };
 
+export const electricity = {
+  isLoading: false,
+  isSuccessful: false,
+  data: null,
+  error: null,
+};
+
 export const signup = {
   isLoading: false,
   isSuccessful: false,

@@ -1,5 +1,5 @@
 import SidebarComponent from "../../components/sidebar/sidebar";
-import { AIRTIME, DATASUB, FUNDWALLET } from "../../constants/routeNames";
+import { AIRTIME, DATASUB, ELECTRICITY, FUNDWALLET } from "../../constants/routeNames";
 import DashboardActionCard from "./actionCard";
 import DashboardHeader from "./header";
 import TransactionTable from "./transaction";
@@ -43,7 +43,8 @@ function DashboardScreen() {
             className="d-flex flex-row flex-xl-column flex-wrap justify-content-around justify-content-xl-start mx-xl-4 col-12 col-xl-3"
           >
             <DashboardActionCard
-              title="Fund Wallet"
+              path = {ELECTRICITY}
+              title="Buy Electricity"
               className="col-11 m-auto col-md-6 my-5 my-xl-0 col-xl-12"
               bg="#8bb8f1"
               icon="wallet"

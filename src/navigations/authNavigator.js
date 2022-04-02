@@ -8,6 +8,7 @@ import {
   CREATEPRODUCT,
   DASHBOARD,
   DATASUB,
+  ELECTRICITY,
   FUNDWALLET,
   HOME,
   PRODUCTS,
@@ -22,6 +23,7 @@ import FidpressCommerce from "../screens/ecommerce";
 import HomeScreen from "../screens/home";
 import AirtimePurchaseComponent from "../screens/transactions/airtime";
 import DataSubscription from "../screens/transactions/data";
+import ElectricityPurchaseComponent from "../screens/transactions/electricity";
 import FundWallet from "../screens/transactions/fundWallet";
 // import DatabaseDetailScreen from "../screens/myorganization/websites/database";
 
@@ -63,6 +65,9 @@ const AuthNavigator = () => {
         </Route>
         <Route path={CREATEPRODUCT}>
           <ProductsWrapper />
+        </Route>
+        <Route path={ELECTRICITY}>
+          <ElectricityPurchaseComponent />
         </Route>
         <Route path={HOME}>
           <HomeScreen />

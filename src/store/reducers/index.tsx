@@ -7,6 +7,7 @@ import auth from './auth'
 import airtime from "./airtime";
 import users from "./users";
 import transactions from "./transactions";
+import electricity from "./electricity";
 
 /**
  * @function rootReducer 
@@ -18,7 +19,8 @@ const rootReducer = combineReducers({
     auth,
     airtime,
     users,
-    transactions
+    transactions,
+    electricity
 })
 
 export default rootReducer

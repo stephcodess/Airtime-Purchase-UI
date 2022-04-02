@@ -27,45 +27,10 @@ function FooterComponent() {
       style={{ backgroundColor: "#3abee7"}}
     >
       <div className="copyright">
-        <div className="container d-flex flex-row justify-content-between align-items-center" style={{ height: 80 }}>
-          <p>
+        <div className="container row m-auto align-items-center" style={{ height: "100%" }}>
+          <p className="col-12 my-4">
             © Copyright 2022 - Fidpress. All Rights Reserved.
           </p>
-
-          <nav className="footer-menu col-6">
-            <ul className="row justify-content-between">
-              <li>
-                <Link to={'/'} className="text-dark">
-                  F.A.Q
-                </Link>
-              </li>
-              <li>
-                <Link to={'/'} className="text-dark">
-                  How It Works
-                </Link>
-              </li>
-              <li>
-                <Link to={'/'} className="text-dark">
-                  Blog
-                </Link>
-              </li>
-              <li>
-                <Link to={'/'} className="text-dark">
-                  Terms
-                </Link>
-              </li>
-              <li>
-                <Link to={'/'} className="text-dark">
-                  Developers (API)
-                </Link>
-              </li>
-              <li>
-                <Link to={'/'} className="text-dark">
-                  Contact Us
-                </Link>
-              </li>
-            </ul>
-          </nav>
         </div>
       </div>
     </div>

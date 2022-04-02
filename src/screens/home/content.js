@@ -1,12 +1,13 @@
 import TestimonialComponent from "./testimonial";
 import TypeAnimation from "react-type-animation";
+import HomeServices from "../../components/home/services";
 function ContentWrapper() {
   return (
-    <div className="v-page-wrap no-bottom-spacing no-top-spacing">
       <div className="v-bg-stylish">
-        <div className="container">
+        <div className="bg-light">
+        <div className="container bg-height">
           <div className="row center">
-            <div className="col-sm-12 d-flex flex-column align-items-center mt-5">
+            <div className="col-12 d-flex flex-column align-items-center mt-5">
               <div className="cd-intro">
                 <h1 className="mt-0 text-center">
                   <span>The Fastest, Easiest Way To </span>
@@ -51,7 +52,7 @@ function ContentWrapper() {
           </div>
 
           <div className="row">
-            <div className="col-md-4 col-sm-12 mt-4">
+            <div className="col-lg-4 col-12 mt-3 mb-3 mt-lg-3">
               <div className="feature-box">
                 <div className="feature-box-text clearfix">
                   <h3>Pay Bills Payment At Ease</h3>
@@ -72,7 +73,7 @@ function ContentWrapper() {
                 </div>
               </div>
             </div>
-            <div className="col-md-4 col-sm-12 mt-4">
+            <div className="col-lg-4 col-12 mt-5 mb-3 mt-lg-3">
               <div className="feature-box">
                 <div className="feature-box-text">
                   <h3>Airtime &amp; Cheap Data Subscription</h3>
@@ -93,7 +94,7 @@ function ContentWrapper() {
                 </div>
               </div>
             </div>
-            <div className="col-md-4 col-sm-12 mt-4">
+            <div className="col-lg-4 col-12 mt-5 mb-3 mt-lg-3">
               <div className="feature-box">
                 <div className="feature-box-text">
                   <h3>Stay Connected</h3>
@@ -108,9 +109,11 @@ function ContentWrapper() {
             </div>
           </div>
         </div>
+        </div>
+        <HomeServices />
+        <TestimonialComponent />
       </div>
-      <TestimonialComponent />
-    </div>
+      
   );
 }
 export default ContentWrapper;

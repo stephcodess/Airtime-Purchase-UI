@@ -3,6 +3,7 @@ import HomeBlogComponent from "../../components/home/blog";
 // import FaqPage from "../../components/home/faq";
 // import HomeFooter from "../../components/home/footer";
 import LandingBanner from "../../components/home/landing";
+import HomeServices from "../../components/home/services";
 import WhyChooseUs from "../../components/home/why";
 import ContentWrapper from "./content";
 import FooterComponent from "./footer";
@@ -15,7 +16,7 @@ function HomeScreen(){
             <Header />
             <LandingBanner />
             <ContentWrapper />
-            <WhyChooseUs />
+            {/* <WhyChooseUs /> */}
             <HomeBlogComponent />
             <FooterComponent />
             {/* <Services />
