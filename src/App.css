@@ -30,3 +30,20 @@ input:-webkit-autofill:active{
 .faq .basic p {
   color: #6980aa;
 }
+.bg-height{
+  height: 50vh;
+}
+
+@media (max-width: 998px) {
+  .bg-height{
+      height: 100%;
+  }
+  
+}
+
+.service-paragraph{
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.534);
+  letter-spacing: 1px;
+  font-weight:20;
+}

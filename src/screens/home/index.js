@@ -1,14 +1,10 @@
+import AirtimePurchaseComponentFaq from "../../components/faq";
 import Header from "../../components/header";
 import HomeBlogComponent from "../../components/home/blog";
-// import FaqPage from "../../components/home/faq";
-// import HomeFooter from "../../components/home/footer";
 import LandingBanner from "../../components/home/landing";
-import HomeServices from "../../components/home/services";
-import WhyChooseUs from "../../components/home/why";
 import ContentWrapper from "./content";
+import HomeFaq from "./faq";
 import FooterComponent from "./footer";
-// import HomeContent from "../../components/home/middle";
-// import Services from "../../components/home/services";
 
 function HomeScreen(){
     return(
@@ -18,11 +14,8 @@ function HomeScreen(){
             <ContentWrapper />
             {/* <WhyChooseUs /> */}
             <HomeBlogComponent />
+            <HomeFaq />
             <FooterComponent />
-            {/* <Services />
-            <HomeContent />
-            <FaqPage />
-            <HomeFooter/> */}
         </div>
     )
 }

@@ -7,6 +7,8 @@ import colors from "../../assets/theme/colors";
 import BANNERIMG from "../../assets/images/woman.png";
 import { useDispatch, useSelector } from "react-redux";
 import { login, loginCleanup } from "../../store/actions/login";
+import { Link } from "react-router-dom";
+import { REGISTER } from "../../constants/routeNames";
 /**
  * The login Input component
  * @class LoginComponent
@@ -94,8 +96,8 @@ function LoginComponent() {
   return (
     <div className="bigWrapper">
       <div className="col-12 d-flex flex-row justify-content-between align-items-center">
-        <div className="col-5">
-          <div className="col-8 m-auto">
+        <div className="col-12 col-lg-5">
+          <div className="col-10 col-lg-8 m-auto">
             <div className="login-logo">
               <img src={LOGO} alt="fidpress" />
             </div>
@@ -149,7 +151,7 @@ function LoginComponent() {
               pr={10}
               pl={10}
             />
-            <span>No Account Yet?? Register</span>{" "}
+            <span>No Account Yet?? <Link to={REGISTER}>Register</Link></span>
             <div>
               <Button
                 height={50}
@@ -163,22 +165,9 @@ function LoginComponent() {
                 mt={25}
               />
             </div>
-            <span
-              style={{
-                width: "100%",
-                display: "flex",
-                flexDirection: "row",
-                justifyContent: "center",
-                marginTop: "15px",
-                fontWeight: "bolder",
-              }}
-            >
-              {" "}
-              OR
-            </span>
           </div>
         </div>
-        <div className="loginBg col-7 vh-100 d-flex flex-column justify-content-between">
+        <div className="loginBg col-7 vh-100 d-lg-flex flex-column justify-content-between d-none">
           <div className="bannerText d-flex flex-column justify-content-center">
             <h4>LOGIN TO FIDPRESS</h4>
             <ul>

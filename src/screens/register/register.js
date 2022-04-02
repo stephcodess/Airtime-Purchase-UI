@@ -7,6 +7,8 @@ import colors from "../../assets/theme/colors";
 import BANNERIMG from "../../assets/images/woman.png";
 import { signup, signupCleanup } from "../../store/actions/signup";
 import { useDispatch, useSelector } from "react-redux";
+import { Link } from "react-router-dom";
+import { LOGIN } from "../../constants/routeNames";
 function RegisterComponent() {
   // const [data, setData] = useState(); //to keep input data as an array
   const [form, setForm] = useState({}); //to keep input data as an array
@@ -99,8 +101,8 @@ function RegisterComponent() {
   return (
     <div className="bigWrapper">
       <div className="col-12 d-flex flex-row justify-content-between align-items-center">
-        <div className="col-5">
-          <div className="col-8 m-auto">
+        <div className="col-12 col-lg-5">
+          <div className="col-10 col-lg-8 m-auto">
             <div className="login-logo">
               <img src={LOGO} alt="fidpress" />
             </div>
@@ -182,7 +184,7 @@ function RegisterComponent() {
               pr={10}
               pl={10}
             />
-            <span>No Account Yet?? Register</span>{" "}
+            <span>No Account Yet?? <Link to={LOGIN}>Login</Link></span>
             <div>
               <Button
                 height={40}
@@ -198,7 +200,7 @@ function RegisterComponent() {
             </div>
           </div>
         </div>
-        <div className="loginBg col-7 vh-100 d-flex flex-column justify-content-between">
+        <div className="loginBg col-7 vh-100 d-none d-lg-flex flex-column justify-content-between">
           <div className="bannerText d-flex flex-column justify-content-center">
             <h4>REGISTER YOUR ACCOUNT</h4>
             <ul>
