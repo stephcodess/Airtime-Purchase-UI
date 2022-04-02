@@ -58,17 +58,17 @@ function ContentWrapper() {
                   <h3>Pay Bills Payment At Ease</h3>
                   <div className="feature-box-text-inner">
                     <p>
-                      With Payscribe.ng you can conveniently pay electricity
+                      With fidpress you can conveniently pay electricity
                       bills for all discos in Nigeria, Subscribe Gotv, dstv,
                       spectranet..., and get connected in less than a second.{" "}
                       <br />
                     </p>
-                    <a
+                    {/* <a
                       href="https://www.payscribe.ng/page/how-it-works"
                       className="read-more text-primary"
                     >
                       See how it works
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </div>
@@ -84,12 +84,12 @@ function ContentWrapper() {
                       phone airtime online.
                       <br />
                     </p>
-                    <a
+                    {/* <a
                       href="https://www.payscribe.ng/page/data_pricing"
                       className="read-more text-primary"
                     >
                       See Data Pricing
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </div>
@@ -100,7 +100,7 @@ function ContentWrapper() {
                   <h3>Stay Connected</h3>
                   <div className="feature-box-text-inner">
                     <p>
-                      Payscribe.ng can handle all your recurring bills while you
+                      Fidpress can handle all your recurring bills while you
                       do other thing that matters to you. <br />
                     </p>
                   </div>

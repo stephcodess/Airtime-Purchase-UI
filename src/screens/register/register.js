@@ -8,7 +8,8 @@ import BANNERIMG from "../../assets/images/woman.png";
 import { signup, signupCleanup } from "../../store/actions/signup";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import { LOGIN } from "../../constants/routeNames";
+import validator from 'validator';
+import { LOGIN,HOME } from "../../constants/routeNames";
 function RegisterComponent() {
   // const [data, setData] = useState(); //to keep input data as an array
   const [form, setForm] = useState({}); //to keep input data as an array
@@ -55,38 +56,49 @@ function RegisterComponent() {
    * @returns true or false and calls the Api endpoint if no error
    */
   const onSubmit = () => {
-    if (!form.emailAddress) {
+    if (!form.email) {
       //checks if email is not empty
       setErrors((prev) => {
         return {
           ...prev,
-          emailAddress: "Email can not be empty", //error message
+          email: "email can not be empty", //error message
         };
       });
     } else {
-      //   if (validator.isEmail(form.emailAddress)) {
-      //     //checks if the emailAddress is valid
-      //     setErrors((prev) => {
-      //       return {
-      //         ...prev,
-      //         emailAddress: null,
-      //       };
-      //     });
-      //   } else {
-      //     setErrors((prev) => {
-      //       return {
-      //         ...prev,
-      //         emailAddress: "Enter a vailid email address", // error message
-      //       };
-      //     });
-      //   }
+        if (validator.isEmail(form.email)) {
+          //checks if the email is valid
+          setErrors((prev) => {
+            return {
+              ...prev,
+              email: null,
+            };
+          });
+        } else {
+          setErrors((prev) => {
+            return {
+              ...prev,
+              email: "Enter a vailid email address", // error message
+            };
+          });
+        }
     }
+    
     if (!form.password) {
       //checks if password is not empty
       setErrors((prev) => {
         return {
           ...prev,
           password: "password can not be empty", //if empty, display error
+        };
+      });
+    }
+
+    if (!form.username) {
+      //checks if username is not empty
+      setErrors((prev) => {
+        return {
+          ...prev,
+          username: "select a username.", //if empty, display error
         };
       });
     }
@@ -103,9 +115,9 @@ function RegisterComponent() {
       <div className="col-12 d-flex flex-row justify-content-between align-items-center">
         <div className="col-12 col-lg-5">
           <div className="col-10 col-lg-8 m-auto">
-            <div className="login-logo">
+            <Link to={HOME} className="login-logo">
               <img src={LOGO} alt="fidpress" />
-            </div>
+            </Link>
             {data.error && (
               <div
                 style={{
