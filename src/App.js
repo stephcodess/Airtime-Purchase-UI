@@ -11,9 +11,6 @@ import { useEffect } from 'react';
 AOS.init();
 
 function App() {
-  useEffect(()=>{
-    fetch("https://fidpress-api.herokuapp.com/").then((res)=>{return res.json()}).then((me)=>console.log(me))
-  },[])
   return (
     <Provider store={store}>
       <AppNavContainer />
