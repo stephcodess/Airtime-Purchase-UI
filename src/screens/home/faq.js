@@ -2,7 +2,7 @@ import FAQ from "../../assets/images/faq.svg";
 import AirtimePurchaseComponentFaq from "../../components/faq";
 const HomeFaq = () => {
   return (
-    <div className="col-12 pt-5 bg-light">
+    <div className="col-12 py-5 bg-light">
         <h2 className="text-center" >Frequently Asked Questions(FAQ)</h2>
       <div className="container row m-auto bg-height mt-5">
         <div className="col-12 col-lg-6">

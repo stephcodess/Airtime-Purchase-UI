@@ -12,7 +12,7 @@ const HomeServices = () => {
           <h2 className="">Our Services</h2>
           <p></p>
         </div>
-        <div className="bg-height row col-12 pt-5">
+        <div className="bg-height single-service row col-12 pt-5">
           <img
             src={Airtime}
             alt=""
@@ -28,8 +28,6 @@ const HomeServices = () => {
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
               reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
           </div>
           <div
@@ -40,7 +38,7 @@ const HomeServices = () => {
             <img src={Airtime} alt="" className="d-none d-lg-block col-lg-6" />
           </div>
         </div>
-        <div className="bg-height row col-12 pt-5">
+        <div className="bg-height single-service row col-12 pt-5">
           <img
             src={Data}
             alt=""
@@ -56,12 +54,10 @@ const HomeServices = () => {
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
               reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
           </div>
         </div>
-        <div className="bg-height row col-12 pt-5">
+        <div className="bg-height single-service row col-12 pt-5">
           <img
             src={Electricity}
             alt=""
@@ -77,8 +73,6 @@ const HomeServices = () => {
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
               reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
           </div>
           <img
@@ -89,7 +83,7 @@ const HomeServices = () => {
             data-aos-anchor-placement="center-bottom"
           />
         </div>
-        <div className="bg-height row col-12 pt-5">
+        <div className="bg-height single-service row col-12 pt-5">
           <img
             src={Delivery}
             alt=""
@@ -105,8 +99,6 @@ const HomeServices = () => {
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
               reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
           </div>
         </div>

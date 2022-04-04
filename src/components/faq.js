@@ -31,7 +31,7 @@ const data = {
 };
 
 const styles = {
-  // bgColor: 'white',
+  bgColor: 'rgba(0,0,0,0)',
   titleTextColor: "#000",
   rowTitleColor: "#000",
   rowContentColor: 'grey',
@@ -39,7 +39,7 @@ const styles = {
 };
 
 const config = {
-  // animate: true,
+  animate: true,
   // arrowIcon: "V",
   // tabFocus: true
 };

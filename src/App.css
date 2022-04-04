@@ -47,3 +47,20 @@ input:-webkit-autofill:active{
   letter-spacing: 1px;
   font-weight:20;
 }
+
+@media (max-width: 768px) {
+  .single-service{
+    background-color: #fff;
+    box-shadow: 2px 5px 40px 9px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    border-radius: 15px;
+  }
+}
+
+.introtext{
+  background: #fff;
+  padding: 15px;
+  box-shadow: 2px 5px 40px 9px rgba(0, 0, 0, 0.1);
+  height: 500px;
+  border-radius: 15px;
+}

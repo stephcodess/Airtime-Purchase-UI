@@ -39,7 +39,7 @@ export const signup = (payload: any) => async (dispatch: any) => {
       method: "POST", // request method
       data: payload, // request data
     };
-    const { data } = await AxiosCall(requestObj);
+    const data = await AxiosCall(requestObj);
     dispatch(signupSuccess(data)); // fires if the signup is succesfull
   } catch (err) {
     const error = ErrorHandler(err); // handle the undefined errors e.g fro network issues

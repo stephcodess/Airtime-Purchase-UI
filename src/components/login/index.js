@@ -30,7 +30,7 @@ function LoginComponent() {
       setLoadng(false)
       setTimeout(()=>{
         setData("");
-        window.location.href="/dashboard"
+        // window.location.href="/dashboard"
       }, 2000);
       dispatch(loginCleanup);
     }
