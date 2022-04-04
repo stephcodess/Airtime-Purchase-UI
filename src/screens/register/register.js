@@ -25,7 +25,7 @@ function RegisterComponent() {
        setLoadng(false)
        setTimeout(()=>{
          setData("");
-         window.location.href = "/login";
+//          window.location.href = "/login";
        }, 2000)
        dispatch(signupCleanup)
     }else{
