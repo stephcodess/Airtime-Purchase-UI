@@ -12,7 +12,7 @@ const HomeServices = () => {
           <h2 className="">Our Services</h2>
           <p></p>
         </div>
-        <div className="bg-height single-service row col-12 pt-5">
+        <div className="bg-height single-service row col-11 m-auto mt-4 pt-5">
           <img
             src={Airtime}
             alt=""
@@ -38,7 +38,7 @@ const HomeServices = () => {
             <img src={Airtime} alt="" className="d-none d-lg-block col-lg-6" />
           </div>
         </div>
-        <div className="bg-height single-service row col-12 pt-5">
+        <div className="bg-height single-service row col-11 m-auto mt-4 pt-5">
           <img
             src={Data}
             alt=""
@@ -57,7 +57,7 @@ const HomeServices = () => {
             </p>
           </div>
         </div>
-        <div className="bg-height single-service row col-12 pt-5">
+        <div className="bg-height single-service row col-11 m-auto mt-4 pt-5">
           <img
             src={Electricity}
             alt=""
@@ -83,7 +83,7 @@ const HomeServices = () => {
             data-aos-anchor-placement="center-bottom"
           />
         </div>
-        <div className="bg-height single-service row col-12 pt-5">
+        <div className="bg-height single-service row col-11 m-auto mt-4 pt-5">
           <img
             src={Delivery}
             alt=""

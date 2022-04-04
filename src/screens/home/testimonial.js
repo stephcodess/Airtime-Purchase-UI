@@ -43,7 +43,7 @@ export default class TestimonialComponent extends Component {
       prevArrow: <SamplePrevArrow />,
     };
     return (
-      <div className="mt-5 bg-height bg-light">
+      <div className="mt-5 bg-height bg-light pb-4">
         <div className="container my-5">
           <div className="row center">
             <div className="col-sm-12 text-center mt-5 mb-1">

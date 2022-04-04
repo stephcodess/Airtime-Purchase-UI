@@ -9,7 +9,7 @@ function FooterComponent() {
        
         <div class="container row m-auto">
         
-          <div class="col-sm-7" style={{height: 300,overflow:"hidden", paddingTop: 100}}>
+          <div class="col-sm-7" style={{height: 200,overflow:"hidden", paddingTop: 40}}>
           <FooterSlider />
           </div>
           <div class="col-sm-5 d-flex flex-column justify-content-center">

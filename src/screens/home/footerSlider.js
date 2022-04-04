@@ -21,7 +21,7 @@ export default class FooterSlider extends Component {
     return (
       <div>
         <Slider {...settings}>
-          <div class="owl-item" style={{ width: 164}}>
+          <div class="owl-item" >
             <div class="item">
               <figure>
                 <a href="https://www.mtnonline.com">
@@ -35,7 +35,7 @@ export default class FooterSlider extends Component {
               </figure>
             </div>
           </div>
-          <div class="owl-item mx-5" style={{ width: 164 }}>
+          <div class="owl-item mx-5" >
             <div class="item">
               <figure>
                 <a href="https://www.gloworld.com/ng/">
@@ -49,7 +49,7 @@ export default class FooterSlider extends Component {
               </figure>
             </div>
           </div>
-          <div class="owl-item mx-5" style={{ width: 164 }}>
+          <div class="owl-item mx-5" >
             <div class="item">
               <figure>
                 <a href="https://9mobile.com.ng/">
@@ -63,7 +63,7 @@ export default class FooterSlider extends Component {
               </figure>
             </div>
           </div>
-          <div class="owl-item mx-5" style={{ width: 164 }}>
+          <div class="owl-item mx-5" >
             <div class="item">
               <figure>
                 <a href="https://airtel.com.ng/">
@@ -77,7 +77,7 @@ export default class FooterSlider extends Component {
               </figure>
             </div>
           </div>
-          <div class="owl-item mx-5" style={{ width: 164 }}>
+          <div class="owl-item mx-5" >
             <div class="item">
               <figure>
                 <a href="http://www.dstv.com/">
@@ -91,7 +91,7 @@ export default class FooterSlider extends Component {
               </figure>
             </div>
           </div>
-          <div class="owl-item mx-5" style={{ width: 164 }}>
+          <div class="owl-item mx-5" >
             <div class="item">
               <figure>
                 <a href="http://eazy.gotvafrica.com/en/ng/">

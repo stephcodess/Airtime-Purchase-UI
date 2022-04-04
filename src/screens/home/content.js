@@ -56,12 +56,12 @@ function ContentWrapper() {
           </div>
 
           <div className="row justify-content-between">
-            <div className="col-md-6 col-12 px-1 mt-3 mb-3 mt-md-3">
-              <div className="col-md-11 introtext">
+            <div className="col-md-6 col-12 px-1 mt-3 mb-1 mt-md-3">
+              <div className="col-md-11 col-11 m-auto introtext">
                 <img
                     src={Pay}
                     alt=""
-                    className="my-5"
+                    className="my-4"
                     width="100%"
                     height="50%"
                   />
@@ -87,11 +87,11 @@ function ContentWrapper() {
               </div>
             </div>
             <div className="col-md-6 col-12 px-1 mt-5 mb-3 mt-md-3">
-              <div className="col-md-11 introtext">
+              <div className="col-md-11 col-11 m-auto introtext">
               <img
                     src={Fast}
                     alt=""
-                    className="my-5"
+                    className="my-4"
                     width="100%"
                     height="50%"
                   />
