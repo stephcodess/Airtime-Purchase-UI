@@ -5,7 +5,7 @@ let baseURL: string;
 if (REACT_APP_SERVER_HOST) {
   baseURL = `${REACT_APP_SERVER_HOST}/`;
 } else {
-  const host = 'http://127.0.0.1:8000';
+  const host = 'https://fidpress-api.herokuapp.com';
   baseURL = `${host}/`;
 }
 
